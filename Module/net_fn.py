@@ -10,7 +10,8 @@ class Net:
 
         header_dict = self.get_header_dict(header_string)
 
-        rs = requests.get(url,headers=header_dict,verify=SSL_verify)
+
+        rs = requests.get(url,headers=header_dict,verify=SSL_verify,cookies=cookie)
 
         return rs
 
